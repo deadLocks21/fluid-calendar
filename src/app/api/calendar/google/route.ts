@@ -476,6 +476,7 @@ export async function PUT(request: NextRequest) {
       timeMax: newDateFromYMD(newDate().getFullYear() + 1, 0, 1).toISOString(),
       singleEvents: true,
       orderBy: "startTime",
+      maxResults: 2000,
     });
 
     //events sorted by master events first
